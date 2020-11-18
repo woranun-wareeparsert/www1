@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 </head>
 <body>
-  <form action = "edit.php" method = "post" id="CommentForm" >
+  <form action = "edit2.php" method = "post" id="CommentForm" >
     ชื่อของคนที่จะแก้:<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     ความรู้สึกที่เปลี่ยนไป:<br>
