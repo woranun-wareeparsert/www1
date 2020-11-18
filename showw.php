@@ -26,9 +26,15 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <table width="800" border="1" class="table table-dark table-hover table-striped" class="center" >
     <thead class="thead-dark">
     <tr class="active">
-      <th width="200"> <div align="center">Name</div></th>
-      <th width="500"> <div align="center">Felt</div></th>
-      <th width="100"> <div align="center">Action</div></th>
+      <div class="alert alert-success">
+        <th width="200"> <div align="center">Name</div></th>
+      </div>
+      <div class="alert alert-success">
+        <th width="500"> <div align="center">Felt</div></th>
+      </div>
+      <div class="alert alert-success">
+        <th width="100"> <div align="center">Action</div></th>
+      </div>
     </tr>
      </thead>
   <?php
@@ -36,15 +42,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   {
   ?>
     <tr>
-      <div class="alert alert-success">
-        <td><center><?php echo $Result['Name'];?></center></td>
-      </div>
-      <div class="alert alert-success">
-        <td><center><?php echo $Result['Comment'];?></center></td>
-      </div>
-      <div class="alert alert-success">
-        <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn-default"></a>&nbsp;&nbsp;<a href="delete.php"><input type="submit" value="Delete"  class="btn-default"></a></center></td>
-      </div>
+      <td><center><?php echo $Result['Name'];?></center></td>
+      <td><center><?php echo $Result['Comment'];?></center></td>
+      <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn-default"></a>&nbsp;&nbsp;<a href="delete.php"><input type="submit" value="Delete"  class="btn-default"></a></center></td>
     </tr>
   <?php
   }
