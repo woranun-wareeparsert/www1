@@ -38,7 +38,11 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr>
       <div class="alert alert-success">
         <td><center><?php echo $Result['Name'];?></center></td>
+      </div>
+      <div class="alert alert-success">
         <td><center><?php echo $Result['Comment'];?></center></td>
+      </div>
+      <div class="alert alert-success">
         <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn-default"></a>&nbsp;&nbsp;<a href="delete.php"><input type="submit" value="Delete"  class="btn-default"></a></center></td>
       </div>
     </tr>
