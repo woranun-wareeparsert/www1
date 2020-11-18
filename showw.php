@@ -26,15 +26,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <table width="800" border="1" class="table table-dark table-hover table-striped" class="center" >
     <thead class="thead-dark">
     <tr class="active">
-      <div class="alert alert-success">
-        <th width="200"> <div align="center">Name</div></th>
-      </div>
-      <div class="alert alert-success">
-        <th width="500"> <div align="center">Felt</div></th>
-      </div>
-      <div class="alert alert-success">
-        <th width="100"> <div align="center">Action</div></th>
-      </div>
+      <th width="200"> <div align="center" class="alert alert-success">Name</div></th>
+      <th width="500"> <div align="center" class="alert alert-success">Felt</div></th>
+      <th width="100"> <div align="center" class="alert alert-success">Action</div></th>
     </tr>
      </thead>
   <?php
