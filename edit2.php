@@ -34,7 +34,7 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?>
 <div class="panel-footer">
-  <tr><a href="show1.php"><input type="submit" value="Home" class="btn-default btn-sm"></a></tr>
+  <tr><a href="show1.php"><input type="submit" value="Home" class="btn btn-info"></a></tr>
 </div>
 </body>
 </html>
