@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 </head>
 <body>
-  <form action = "insert.php" method = "post" id="CommentForm" >
+  <form action = "insert1.php" method = "post" id="CommentForm" >
     ชื่อ(ENGLISH ONLY!):<br>
     <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
     ความรู้สึกของวันนี้:<br>
