@@ -24,7 +24,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr class="active">
       <th width="200"> <div align="center" class="p-3 mb-2 bg-light text-dark">Name</div></th>
       <th width="500"> <div align="center" class="p-3 mb-2 bg-light text-dark">Comment</div></th>
-      <th width="100"> <div align="center" class="p-3 mb-2 bg-light text-dark">Action</div></th>
+      <th width="150"> <div align="center" class="p-3 mb-2 bg-light text-dark">Action</div></th>
     </tr>
      </thead>
   <?php
@@ -34,7 +34,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <tr>
       <td><center><?php echo $Result['Name'];?></center></td>
       <td><center><?php echo $Result['Comment'];?></center></td>
-      <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn-default"></a>&nbsp;&nbsp;<a href="fromdelete.php"><input type="submit" value="Delete"  class="btn-default"></a></center></td>
+      <td><center><a href="formedit.php"><input type="submit" value="Edit" class="btn-default"></a><a href="fromdelete.php"><input type="submit" value="Delete"  class="btn-default"></a></center></td>
     </tr>
   <?php
   }
