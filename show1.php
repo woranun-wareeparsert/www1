@@ -22,9 +22,9 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <table width="800" border="1" class="p-3 mb-2 bg-info text-white" class="center" >
     <thead class="thead-dark">
     <tr class="active">
-      <th width="200"> <div align="center" class="p-3 mb-2 bg-light text-dark">Name</div></th>
-      <th width="500"> <div align="center" class="p-3 mb-2 bg-light text-dark">Comment</div></th>
-      <th width="100"> <div align="center" class="p-3 mb-2 bg-light text-dark">Action</div></th>
+      <th width="200"> <div align="center" class="p-3 mb-2 bg-warning text-dark">Name</div></th>
+      <th width="500"> <div align="center" class="p-3 mb-2 bg-warning text-dark">Comment</div></th>
+      <th width="100"> <div align="center" class="p-3 mb-2 bg-warning text-dark">Action</div></th>
     </tr>
      </thead>
   <?php
