@@ -13,7 +13,7 @@ $comment = $_POST['comment'];
 $link = $_POST['link'];
 
 
-$sql = "DELETE FROM guestbook WHERE Name='$name';
+$sql = "DELETE FROM guestbook WHERE Name='$name'";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
